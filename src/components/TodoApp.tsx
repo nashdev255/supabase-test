@@ -10,17 +10,13 @@ const TodoApp = () => {
         const getTodos = async () => {
             const todos = await getAllTodos();
             setTodos(todos);
-            console.log(todos);
         };
         getTodos();
     }, []);
 
     const handleSubmit = async (e: any) => {
         e.preventDefault();
-        if(title === "") {
-            console.log("you cannot send without column");
-            return;
-        };
+        if(title === "") return;
         await addTodo(title);
         const todos = await getAllTodos();
         setTodos(todos);

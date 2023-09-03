@@ -1,4 +1,3 @@
-import autoprefixer from 'autoprefixer';
 import { supabase } from './supabaseClient.server';
 
 export const getAllTodos = async () => {
