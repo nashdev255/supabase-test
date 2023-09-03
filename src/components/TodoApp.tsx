@@ -1,7 +1,19 @@
-import React from 'react';
-import TodoList from './TodoList'
+import React, { useState, useEffect } from 'react';
+import { getAllTodos } from '../utils/supabaseFunctions';
+import TodoList from './TodoList';
+import { showSupabaseUrl } from '@/utils/supabaseClient.server';
 
 const TodoApp = () => {
+    // const [todos, setTodos] = useState<any>([]);
+
+    // useEffect(() => {
+    //     const getTodos = async () => {
+    //         const todos = await getAllTodos();
+    //     };
+    // }, []);
+
+    showSupabaseUrl();
+
     return (
         <section className="text-center mb-2 text-2xl font-medium">
             <h3>Supabase Todo App</h3>
