@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getAllTodos } from '../utils/supabaseFunctions';
 import TodoList from './TodoList';
-import { showSupabaseUrl } from '@/utils/supabaseClient.server';
 
 const TodoApp = () => {
     // const [todos, setTodos] = useState<any>([]);
@@ -11,8 +10,6 @@ const TodoApp = () => {
     //         const todos = await getAllTodos();
     //     };
     // }, []);
-
-    showSupabaseUrl();
 
     return (
         <section className="text-center mb-2 text-2xl font-medium">
