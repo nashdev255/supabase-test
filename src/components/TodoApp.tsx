@@ -33,10 +33,10 @@ const TodoApp = () => {
             <form onSubmit={(e) => handleSubmit(e)}>
                 <input
                 type="text"
-                className='mr-2 shadow-lg p-1 outline-none'
+                className='mr-2 shadow-md p-1 outline-none appearance-none'
                 onChange={(e) => setTitle(e.target.value)}
                 />
-                <button className='shadow-md border-2 px-1 py-1 rounded-lg bg-green-200'>Add</button>
+                <button className='shadow-md border-2 p-1 rounded-lg bg-green-200'>Add</button>
             </form>
             <TodoList todos={todos} setTodos={setTodos}/>
         </section>
